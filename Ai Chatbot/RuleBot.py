@@ -16,9 +16,9 @@ class RuleAiBot:
             'general_query': r'.*how.*help.*'
         }
 
-    
+
     def greet(self):
-        self.name = input("Hii! Welcome to our Customer Support and Service. What's your name?\n Your name: ")
+        self.name = input("Hii! Wellcome to our Customer Support and Service. What's your name?\n Your name: ")
         will_help = input(f"Hi {self.name}, how can I assist you today?\n").lower()
         if will_help in self.negative_res:
             print("Okay, have a nice day!")
